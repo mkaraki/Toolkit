@@ -1,0 +1,12 @@
+﻿[
+  {
+    "name": "Control Panel",
+    "exe": "control.exe",
+    "description": "Windows Control Panel"
+  },
+  {
+    "name": "Command Prompt",
+    "exe": "cmd.exe",
+    "description": ""
+  }
+]
