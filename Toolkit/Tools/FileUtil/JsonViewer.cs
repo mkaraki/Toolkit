@@ -32,7 +32,11 @@ namespace Toolkit.Tools.FileUtil
             string json = string.Empty;
             if (rbtn_file.Checked)
             {
-                if (!File.Exists(tbox_jsonpath.Text)) return;
+                if (!File.Exists(tbox_jsonpath.Text))
+                {
+                    MessageBox.Show("No File");
+                    return;
+                }
                 json = File.ReadAllText(tbox_jsonpath.Text);
             }
             else if (rbtn_area.Checked)
@@ -40,7 +44,16 @@ namespace Toolkit.Tools.FileUtil
                 json = rtbox_json.Text;
             }
 
-            dynamic data = JsonConvert.DeserializeObject<dynamic>(json);
+            dynamic data;
+            try
+            {
+                data = JsonConvert.DeserializeObject<dynamic>(json);
+            }
+            catch
+            {
+                MessageBox.Show("No Json");
+                return;
+            }
 
             rtbox_dynamic_str.Text = data.ToString();
 

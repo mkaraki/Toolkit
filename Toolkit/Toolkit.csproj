@@ -63,6 +63,12 @@
     <Compile Include="Tools\Config\WindowsJump.Designer.cs">
       <DependentUpon>WindowsJump.cs</DependentUpon>
     </Compile>
+    <Compile Include="Tools\FileUtil\CSVViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\FileUtil\CSVViewer.Designer.cs">
+      <DependentUpon>CSVViewer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Tools\FileUtil\JsonViewer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +99,12 @@
     <Compile Include="Tools\PictureTools\RandomPictureGenerator.Designer.cs">
       <DependentUpon>RandomPictureGenerator.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\AskLineWithOK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\AskLineWithOK.Designer.cs">
+      <DependentUpon>AskLineWithOK.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Picture\PictureViewer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,6 +126,9 @@
     <EmbeddedResource Include="Tools\Config\WindowsJump.resx">
       <DependentUpon>WindowsJump.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Tools\FileUtil\CSVViewer.resx">
+      <DependentUpon>CSVViewer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Tools\FileUtil\JsonViewer.resx">
       <DependentUpon>JsonViewer.cs</DependentUpon>
     </EmbeddedResource>
@@ -128,6 +143,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Tools\PictureTools\RandomPictureGenerator.resx">
       <DependentUpon>RandomPictureGenerator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\AskLineWithOK.resx">
+      <DependentUpon>AskLineWithOK.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Picture\PictureViewer.resx">
       <DependentUpon>PictureViewer.cs</DependentUpon>

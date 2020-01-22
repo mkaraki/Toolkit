@@ -20,6 +20,7 @@ namespace Toolkit
             { "IP Addresses", typeof(Tools.Network.GetIPAddress) },
             { "Json Viewer", typeof(Tools.FileUtil.JsonViewer) },
             { "Internet Information", typeof(Tools.Network.InternetInfomation) },
+            { "CSV Viewer", typeof(Tools.FileUtil.CSVViewer) },
         };
 
         public Launcher()
