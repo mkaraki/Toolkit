@@ -81,12 +81,6 @@
     <Compile Include="Tools\Network\GetIPAddress.Designer.cs">
       <DependentUpon>GetIPAddress.cs</DependentUpon>
     </Compile>
-    <Compile Include="Tools\Network\InternetInfomation.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Tools\Network\InternetInfomation.Designer.cs">
-      <DependentUpon>InternetInfomation.cs</DependentUpon>
-    </Compile>
     <Compile Include="Tools\PictureTools\PictureCompare.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,9 +128,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Tools\Network\GetIPAddress.resx">
       <DependentUpon>GetIPAddress.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Tools\Network\InternetInfomation.resx">
-      <DependentUpon>InternetInfomation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Tools\PictureTools\PictureCompare.resx">
       <DependentUpon>PictureCompare.cs</DependentUpon>
