@@ -19,6 +19,7 @@ namespace Toolkit
             { "Jump", typeof(Tools.Config.WindowsJump) },
             { "IP Addresses", typeof(Tools.Network.GetIPAddress) },
             { "Json Viewer", typeof(Tools.FileUtil.JsonViewer) },
+            { "Internet Information", typeof(Tools.Network.InternetInfomation) },
         };
 
         public Launcher()
@@ -30,7 +31,7 @@ namespace Toolkit
                 Button btn = new Button();
                 btn.Text = n;
                 btn.Click += Btn_Click;
-                btn.Size = new Size(100, 23);
+                btn.Size = new Size(125, 23);
 
                 flowLayoutPanel1.Controls.Add(btn);
             }

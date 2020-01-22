@@ -39,6 +39,7 @@
             this.rbtn_file = new System.Windows.Forms.RadioButton();
             this.rbtn_area = new System.Windows.Forms.RadioButton();
             this.rtbox_json = new System.Windows.Forms.RichTextBox();
+            this.ofd = new System.Windows.Forms.OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -152,6 +153,7 @@
             this.btn_json_browse.TabIndex = 3;
             this.btn_json_browse.Text = "Browse";
             this.btn_json_browse.UseVisualStyleBackColor = true;
+            this.btn_json_browse.Click += new System.EventHandler(this.btn_json_browse_Click);
             // 
             // rbtn_file
             // 
@@ -186,6 +188,10 @@
             this.rtbox_json.Size = new System.Drawing.Size(294, 384);
             this.rtbox_json.TabIndex = 6;
             this.rtbox_json.Text = "";
+            // 
+            // ofd
+            // 
+            this.ofd.FileName = "file.json";
             // 
             // JsonViewer
             // 
@@ -222,5 +228,6 @@
         private System.Windows.Forms.RadioButton rbtn_file;
         private System.Windows.Forms.RadioButton rbtn_area;
         private System.Windows.Forms.RichTextBox rtbox_json;
+        private System.Windows.Forms.OpenFileDialog ofd;
     }
 }

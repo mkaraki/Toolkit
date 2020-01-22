@@ -13,6 +13,18 @@ namespace Toolkit.Tools.FileUtil
             InitializeComponent();
         }
 
+        public JsonViewer(string json)
+        {
+            InitializeComponent();
+
+            rtbox_json.Text = json;
+
+            rbtn_file.Checked = false;
+            rbtn_area.Checked = true;
+
+            btn_proc_Click(null, null);
+        }
+
         private void btn_proc_Click(object sender, EventArgs e)
         {
             jsonView.Nodes.Clear();
@@ -89,6 +101,13 @@ namespace Toolkit.Tools.FileUtil
         private void rbtn_area_CheckedChanged(object sender, EventArgs e)
         {
             if (rbtn_area.Checked) rbtn_file.Checked = false;
+        }
+
+        private void btn_json_browse_Click(object sender, EventArgs e)
+        {
+            if (ofd.ShowDialog() != DialogResult.OK) return;
+
+            tbox_jsonpath.Text = ofd.FileName;
         }
     }
 }
