@@ -75,6 +75,12 @@
     <Compile Include="Tools\FileUtil\JsonViewer.Designer.cs">
       <DependentUpon>JsonViewer.cs</DependentUpon>
     </Compile>
+    <Compile Include="Tools\Geo\OpenMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\Geo\OpenMap.Designer.cs">
+      <DependentUpon>OpenMap.cs</DependentUpon>
+    </Compile>
     <Compile Include="Tools\Network\GetIPAddress.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,6 +131,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Tools\FileUtil\JsonViewer.resx">
       <DependentUpon>JsonViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\Geo\OpenMap.resx">
+      <DependentUpon>OpenMap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Tools\Network\GetIPAddress.resx">
       <DependentUpon>GetIPAddress.cs</DependentUpon>

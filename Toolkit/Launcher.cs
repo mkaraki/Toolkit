@@ -20,6 +20,7 @@ namespace Toolkit
             { "IP Addresses", typeof(Tools.Network.GetIPAddress) },
             { "Json Viewer", typeof(Tools.FileUtil.JsonViewer) },
             { "Separated File Viewer", typeof(Tools.FileUtil.CSVViewer) },
+            { "Open Map by Lon/Lat", typeof(Tools.Geo.OpenMap) },
         };
 
         public Launcher()
@@ -31,7 +32,7 @@ namespace Toolkit
                 Button btn = new Button();
                 btn.Text = n;
                 btn.Click += Btn_Click;
-                btn.Size = new Size(125, 23);
+                btn.Size = new Size(130, 23);
 
                 flowLayoutPanel1.Controls.Add(btn);
             }
